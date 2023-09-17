@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Super Hero Info. using API</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    </style>
+    <style>
+        body{
+            background-color: cadetblue;
+            font-family: 'Poppins', sans-serif;
+        }
+        .col-md-6 input{
+            height: 40px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background-color: darkslategrey;
+            color: rgb(255, 255, 255);
+            letter-spacing: 2px;
+            font-weight: 800;
+            padding: 20px;
+        }
+        .btn-warning{
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        h4{
+            letter-spacing: 3px;
+            font-weight: 700;
+            color: rgb(217, 220, 223);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <h4 class="text-center my-4">Super Hero Info using API</h4>
+
+                
+                <div class="col-md-6" style="margin:auto;">
+                    <input type="text" name="" id="heroName" style="width:100%" placeholder="Enter Super Hero Name">
+                    <button class="btn btn-warning my-5" id="heroBtn">Get Random Hero</button>
+                    <button class="btn btn-warning my-5 mx-5" id="heroSearch">Search</button>
+
+                    <div class="col-md-6 offset-md-2" id="img">
+
+                    </div>
+                    <div id="heroid">
+
+                    </div>
+                    <div class="col-md-6 offset-md-3" id="name">
+    
+                    </div>
+                    <div class="col-md-6 offset-md-3" id="stats">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
