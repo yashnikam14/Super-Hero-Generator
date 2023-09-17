@@ -17,7 +17,7 @@ const getHero = (id)=>{
         document.getElementById('img').innerHTML = `<img src='${json.image.url}'></img>`;
         document.getElementById('heroid').innerHTML=`<h4 class="text-center my-3">Hero Id ->  ${json.id}</h4>`
         document.getElementById('name').innerHTML = `<h4 class="text-center my-4">Name -> ${json.name}</h4>`
-        // document.getElementById('stats').innerHTML = `<h4 class="text-center my-4">${json.appearance.gender}</h4>`
+        
         document.getElementById('stats').innerHTML = `<h4 class="text-center my-4">${getStats(json)}</h4>`
         
     });
@@ -52,18 +52,12 @@ const getStats = (character)=>{
 
 heroBtn.onclick = () =>{
     const idOfHero = heroRandId();;
-    // const idOfHero = heroId.value;
-    // 
+    
     heroName.value='';
     getHero(idOfHero);
-    // console.log(Math.ceil(math.random()*731));
+    
     
 }
-
-
-
-
-// console.log();
 
 heroSearch.onclick=()=>{
     const nameOfHero = heroName.value;
